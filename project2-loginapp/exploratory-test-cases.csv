@@ -1,0 +1,21 @@
+ID,Test Scenario,Description,Priority
+ET-001,Random rapid clicks,Click login rapidly multiple times to check UI stability,P2
+ET-002,Copy/paste credentials,Copy paste username/password and login,P1
+ET-003,Keyboard navigation,Tab between fields and login using Enter,P1
+ET-004,Browser back button,Login then click browser back,Check session handling,P2
+ET-005,Resize browser,Resize window to mobile view,Check responsive layout,P2
+ET-006,Inspect element,Modify username field via devtools and submit,P2
+ET-007,Special keys,Enter emoji or unicode in fields,P2
+ET-008,SQL injection attempts,Enter common injection strings,Verify app not breaking,P1
+ET-009,Session hijack simulation,Try navigating /secure after logout,P1
+ET-010,Network offline,Disconnect network mid-login,Observe behavior,P2
+ET-011,Multiple tabs,Login in two tabs simultaneously,Check session consistency,P2
+ET-012,Browser autofill,Use autofill on username/password fields,Check if login works,P2
+ET-013,Login while logged in,Re-login without logout,P2
+ET-014,Password reveal,Check if password is visible in any way,P2
+ET-015,Clipboard,Copy password to clipboard,P3
+ET-016,Error message persistence,Check if error messages disappear on field focus,P2
+ET-017,Session cookie deletion,Delete session cookie,Try navigating secure page,P1
+ET-018,Inspect response,Observe network response during login,P2
+ET-019,Page reload after failed login,Reload page after invalid login,P2
+ET-020,Accessibility testing,Test screen reader tab order & labels,P3
