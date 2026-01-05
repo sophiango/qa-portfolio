@@ -1,0 +1,16 @@
+ID,Title,Priority,Description,Expected Result,Test Result
+TC-001,Add a Single Todo Item,P0,Verify user can add a todo item,A todo item labeled 'Buy milk' appears and is active,PASSED
+TC-002,Add Multiple Todo Items,P0,Verify multiple todos can be added and listed in order,All todos are displayed in entry order,PASSED
+TC-003,Prevent Adding Empty Todo,P1,Verify app does not allow empty todos,No blank todo is added,PASSED
+TC-004,Trim Leading and Trailing Spaces,P2,Verify leading/trailing spaces are removed,Todo displays as 'Learn QA' without spaces,PASSED
+TC-005,Mark a Todo as Completed,P0,Verify a todo can be marked complete,Todo shows completed styling,PASSED
+TC-006,Uncheck a Completed Todo,P0,Verify a completed todo can be restored to active,Todo returns to active state,PASSED
+TC-007,Edit an Existing Todo,P1,Verify user can edit todo text,Todo text updates after confirming edit,PASSED
+TC-008,Cancel Edit Without Saving,P2,Verify edits are not saved when cancelled,Original text remains unchanged,PASSED
+TC-009,Delete a Todo Item,P0,Verify user can delete a todo,Todo is removed from the list,PASSED
+TC-010,Toggle All to Complete,P1,Verify Toggle All completes all todos,All todos become completed,PASSED
+TC-011,Toggle All to Active,P1,Verify Toggle All returns todos to active,All todos become active again,PASSED
+TC-012,Filter to Show Only Active,P1,Verify Active filter hides completed todos,Only active todos are shown,PASSED
+TC-013,Filter to Show Only Completed,P1,Verify Completed filter hides active todos,Only completed todos are shown,PASSED
+TC-014,Clear Completed Items,P0,Verify Clear Completed removes completed todos,All completed todos are deleted and active remain,PASSED
+TC-015,Todo Counter Updates Correctly,P1,Verify counter reflects active todo count,Counter updates based on number of active todos,PASSED
