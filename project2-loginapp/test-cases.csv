@@ -1,21 +1,11 @@
-ID,Title,Description,Preconditions,Test Steps,Expected Result,Priority
-TC-001,Valid Login,Verify user can login with correct credentials,User on login page,Enter username "tomsmith" and password "SuperSecretPassword!",Click login,Dashboard/home page displayed,P0
-TC-002,Invalid Username,Verify error message for incorrect username,User on login page,Enter username "wronguser" and password "SuperSecretPassword!",Click login,Error message "Your username is invalid!" displayed,P0
-TC-003,Invalid Password,Verify error message for incorrect password,User on login page,Enter username "tomsmith" and password "wrongpass",Click login,Error message "Your password is invalid!" displayed,P0
-TC-004,Empty Username,Verify error when username is empty,User on login page,Leave username empty and enter password "SuperSecretPassword!",Click login,Error message "Your username is invalid!" displayed,P0
-TC-005,Empty Password,Verify error when password is empty,User on login page,Enter username "tomsmith" and leave password empty,Click login,Error message "Your password is invalid!" displayed,P0
-TC-006,Both Empty,Verify error when both fields empty,User on login page,Leave username and password empty,Click login,Error message "Your username is invalid!" displayed,P0
-TC-007,Leading/Trailing Spaces in Username,Verify spaces are trimmed,User on login page,Enter username "  tomsmith  " and correct password,Click login,Login successful,P1
-TC-008,Leading/Trailing Spaces in Password,Verify spaces are trimmed,User on login page,Enter username "tomsmith" and password "  SuperSecretPassword!  ",Click login,Login successful,P1
-TC-009,Case Sensitivity Username,Verify username is case-sensitive,User on login page,Enter username "TomSmith" and correct password,Click login,Error message displayed,P1
-TC-010,Case Sensitivity Password,Verify password is case-sensitive,User on login page,Enter username "tomsmith" and password "supersecretpassword!",Click login,Error message displayed,P1
-TC-011,Show Password Visibility,Verify password can be viewed if feature exists,User on login page,Enter password and toggle visibility (if available),Password is displayed in plain text,P2
-TC-012,Login Button Disabled on Empty Fields,Verify login disabled when fields empty,User on login page,Leave username/password empty,Observe login button,Button disabled,P1
-TC-013,Remember Me Functionality,Verify "Remember Me" works,User on login page,Enter credentials,Check "Remember Me",Login and logout,Login fields prefilled next visit,P2
-TC-014,Multiple Failed Attempts,Verify lockout after 3 failed attempts,User on login page,Enter wrong password 3 times consecutively,Observe behavior,Account temporarily blocked or warning,P2
-TC-015,Successful Logout,Verify user can logout,User logged in,Click logout button,Redirected to login page,P0
-TC-016,Session Timeout,Verify session ends after inactivity,User logged in,Wait 10+ minutes,Page requires re-login,P1
-TC-017,Special Characters in Username,Verify error with special chars,User on login page,Enter username "!@#$$%" and valid password,Click login,Error message,P2
-TC-018,Special Characters in Password,Verify login with special chars,User on login page,Enter username "tomsmith" and password "!@#$$%",Click login,Error message if invalid,P2
-TC-019,URL Direct Access Without Login,Verify redirect to login,User not logged in,Navigate to /secure page,Redirected to login page,P1
-TC-020,Input Field Max Length,Verify fields enforce max length,User on login page,Enter 256+ char username/password,Click login,Error message or input truncated,P2
+ID,Title,Description,Preconditions,Test Steps,Expected Result,Priority,Test Result
+TC-001,Valid Login,Verify user can login with correct credentials,User on login page,Enter username "tomsmith" and password "SuperSecretPassword!" -> Click login,Dashboard/home page displayed,P0,PASSED
+TC-002,Invalid Username,Verify error message for incorrect username,User on login page,Enter username "wronguser" and password "SuperSecretPassword!" -> Click login,Error message "Your username is invalid!" displayed,P0,PASSED
+TC-003,Invalid Password,Verify error message for incorrect password,User on login page,Enter username "tomsmith" and password "wrongpass" -> Click login,Error message "Your password is invalid!" displayed,P0,FAILED
+TC-004,Empty Username,Verify error when username is empty,User on login page,Leave username empty and enter password "SuperSecretPassword!" -> Click login,Error message "Your username is invalid!" displayed,P0,PASSED
+TC-005,Empty Password,Verify error when password is empty,User on login page,Enter username "tomsmith" and leave password empty -> Click login,Error message "Your username is invalid!" displayed,P0,PASSED
+TC-006,Both Empty,Verify error when both fields empty,User on login page,Leave username and password empty -> Click login,Error message "Your username is invalid!" displayed,P0,PASSED
+TC-007,Leading/Trailing Spaces in Username,Verify spaces should not be trimmed,User on login page,Enter username "  tomsmith  " and correct password -> Click login,Login failed,P1,PASSED
+TC-008,Leading/Trailing Spaces in Password,Verify spaces should not be trimmed,User on login page,Enter username "tomsmith" and password "  SuperSecretPassword!  " -> Click login,Login failed,P1,PASSED
+TC-009,Case Sensitivity Username,Verify username is case-sensitive,User on login page,Enter username "TomSmith" and correct password -> Click login,Error message displayed,P1,PASSED
+TC-010,Case Sensitivity Password,Verify password is case-sensitive,User on login page,Enter username "tomsmith" and password "supersecretpassword!" -> Click login,Error message displayed,P1,PASSED

@@ -1,0 +1,10 @@
+ID,Scenario,Description,Priority
+ET-001,Rapid search,Click search repeatedly,P2
+ET-002,Special char input,Enter emoji/unicode,P2
+ET-003,Network disconnect mid-search,P1
+ET-004,Very large input,Enter 256+ chars,P2
+ET-005,Back/forward navigation,P2
+ET-006,Multiple searches in quick succession,P2
+ET-007,Inspect API response via DevTools,P1
+ET-008,Check edge-case cities,P2
+ET-009,Error message disappears,Observe auto-hide,P1

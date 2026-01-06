@@ -1,4 +1,4 @@
-# 🐞 Login Page Bug Report — Flash Message Duration
+# 🐞 Login Page Bug Report — Misleading error message
 
 **Bug ID:** BUG-LOGIN-001  
 **Severity:** S2 — Minor  

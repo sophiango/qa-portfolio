@@ -1,0 +1,11 @@
+ID,Title,Description,Preconditions,Test Steps,Expected Result,Priority,Test Result
+TC-001,Valid City Search,Verify search for "London" returns data,App open,Enter "London" and click search,Weather info displayed,P0,PASSED
+TC-002,Empty Search,Error when input empty,App open,Click search without input,Error message "Please enter a city",P0,FAILED
+TC-003,Invalid City Name,Error when city doesn't exist,App open,Enter "Xyzabc123" and click search,Error message displayed,P0,FAILED
+TC-004,Special Characters,Verify input handling,App open,Enter "!@#$$%" and click search,Error message displayed,P1,FAILED
+TC-005,Long City Name,Verify max input,App open,Enter 256+ char name,Error message displayed or truncated,P1,FAILED
+TC-006,Case Sensitivity,Verify search is case-insensitive,App open,Enter "london" lowercase,Correct weather info displayed,P1,PASSED
+TC-007,City with Spaces,Verify multi-word city,App open,Enter "New York" and search,Correct weather info displayed,P0,PASSED
+TC-008,Multiple Searches,Verify successive searches,App open,Search "London" then "Paris",Correct info each time,P1,PASSED
+TC-009,Network Disconnect,Verify error handling mid-search,App open,Disconnect network,Click search,Network error shown,P1,PASSED
+TC-010,Weather Details,Verify info displayed,Search result displayed,Check temp, humidity, condition,All info visible and correct,P0,PASSED
